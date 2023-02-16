@@ -2,31 +2,32 @@ package org.example;
 
 public class Familia {
 
-    Animal papa="Dinosaurin";
-    Animal mama="Tiburosin";
-    Animal hijo;
+    String papa="Dinosaurin";
+    String mama="Tiburosin";
+    String hijo="Cebrallo";
 
-    public Familia(Animal papa, Animal mama) {
+    public Familia(String papa, String mama) {
         this.papa = papa;
         this.mama = mama;
+        this.hijo = hijo;
     }
 
-    public  imprimirFamilia(){
+    public  void imprimirFamilia(String papa, String mama, String hijo){
 
         //Este metodo muestra los nombres de los integrantes de la familia
         System.out.println(
-                "El papá es: "+this.papa.nombre+
-                        "\nLa mamá es: "+this.mama.nombre+
-                            "\nEl hijo es: "+this.hijo.nombre
+                "El papá es: "+this.papa+
+                        "\nLa mamá es: "+this.mama+
+                            "\nEl hijo es: "+this.hijo
         );
 
     }
 
     public void tenerHijo(String nombre){
 
-        if(this.papa.pareja!=null){
+        if(this.papa!=null){
 
-            Animal hijo= new Animal();
+            Animal hijo= new Animal("Cebrallo", 150);
             hijo.nombre=nombre;
             hijo.peso=1;
             double random = Math.random();
@@ -35,7 +36,6 @@ public class Familia {
             }else{
                 hijo.genero="M";
             }
-            this.hijo=hijo;
 
         }else{
             System.out.println("Aun no puedes tener hijos");

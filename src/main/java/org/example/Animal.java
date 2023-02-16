@@ -2,10 +2,10 @@ package org.example;
 
 public class Animal {
 
-    String nombre;
+     String nombre;
     String genero;
     double peso=1;
-    Animal pareja;
+    private String pareja;
 
 
     public Animal(String nombre, double peso) {
@@ -13,7 +13,7 @@ public class Animal {
         this.peso = peso;
     }
 
-    void encontrarPareja(Animal pareja){
+    void encontrarPareja(String pareja){
         this.pareja=pareja;
     }
 

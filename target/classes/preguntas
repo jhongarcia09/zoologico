@@ -1,0 +1,20 @@
+1.¿Cuántas clases tiene el proyecto?
+R// tiene 3 clases
+
+2.¿En cuál clase se define el programa principal?
+R// se definen 3 clases
+
+3.¿Cuántos objetos de la clase Animal se crean en la clase
+principal?
+R// se crean 3 objetos
+
+4.¿Cuántos y cuáles son los atributos de la clase Animal?
+R// los atributos son 4 y son: nombre,genero,peso,pareja
+
+5.¿Cuáles atributos de la clase Animal no son primitivos?
+R//
+
+6.¿Qué pasa si eliminamos la línea 17 de la clase Zoologico?
+R//
+
+7.¿Cuántos métodos tiene la clase Familia?
